@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test</title>
+    <link rel="stylesheet" href="mock.css">  <!-- ✅ CSS Linked Here -->
+</head>
+<body>
+
+    <!-- First Page: Candidate Details -->
+    <div id="startPage" class="container">
+
+         <h1 style="text-align: center; font-size: 28px; font-weight: bold; color: #007bff;">
+        Welcome to CG PET Mock Test <br> Prepared by ReadECuble
+    </h1>
+<div class="instruction-box">
+        <h2>General Instructions:</h2>
+        <ul>
+            <li><b>Test Duration:</b> 3 Hours</li>
+            <li><b>Total Questions:</b> 150</li>
+			<li><b>Total Marks:</b> 150</li>
+			<li><b>No Negative Marking</b> </li>
+            <li><b>Subjects:</b> Physics, Chemistry, and Mathematics</li>
+            <li><b>Question Distribution: Syllabus → (Class 11 & 12)</b></li>
+            <ul>
+                <li>1 - 50 → Physics</li>
+                <li>51 - 100 → Chemistry</li>
+                <li>101 - 150 → Mathematics </li>
+            </ul>
+            <li><b>Each question has 4 options (A, B, C, D). Select the correct answer.</b></li>
+            <li><b>Once the time is over, your test will be submitted automatically.</b></li>
+        </ul>
+    </div>
+
+
+
+ <h2>Mock Test Registration</h2>
+        <input type="text" id="candidateName" placeholder="Enter Your Name"><br>
+        <select id="paperSelect">
+            <option value="paper1">Paper 1</option>
+            <option value="paper2">Paper 2</option>
+        </select><br>
+        <button onclick="startTest()">Start Test</button>
+    </div>
+
+    <!-- Second Page: Mock Test -->
+      <div id="testPage" class="container hidden">
+        <h2>Mock Test</h2>
+
+
+
+        <p id="timer">Time Left: 3:00:00</p>
+<div class="sidebar">
+    <h3>Questions</h3>
+    <div id="questionNav"></div>
+</div>
+        <div id="questionsContainer"></div>
+ <button id="prevBtn" onclick="prevQuestion()" style="display: none;">Previous</button>
+    <button id="nextQBtn" onclick="nextQuestion()">Next</button>
+    <button id="submitBtn" onclick="submitTest()" style="display: none;">Submit</button>
+    </div>
+
+
+    <script src="mock.js"></script>
+
+</body>
+</html>
